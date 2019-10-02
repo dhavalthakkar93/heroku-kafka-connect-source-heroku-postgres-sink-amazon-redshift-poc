@@ -1,0 +1,12 @@
+:key:nginx:https://nginx.org/keys/nginx_signing.key
+:key:confluent:http://packages.confluent.io/deb/5.2/archive.key
+:repo:deb [arch=amd64] https://packages.confluent.io/deb/5.2 stable main
+confluent-kafka-2.11
+confluent-schema-registry
+confluent-kafka-connect-jdbc
+confluent-kafka-connect-s3
+nginx
+apache2-utils
+curl
+openssh-server
+openssl

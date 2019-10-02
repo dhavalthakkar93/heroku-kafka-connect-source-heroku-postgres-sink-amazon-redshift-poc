@@ -1,0 +1,35 @@
+{
+  "name": "Heroku Kafka Connect",
+  "description": "Heroku Kafka Connect to Sync Data from Heroku Postgres to Heroku Kafka and from Heroku Kafka to Amazon Redshift",
+  "keywords": [
+    "Kafka",
+    "Postgres",
+    "Connect",
+    "Redshift"
+  ],
+  "repository": "https://github.com/dhavalthakkar93/heroku-kafka-connect-source-heroku-postgres-sink-amazon-redshift-poc",
+  "env": {
+    "TRUSTSTORE_PASSWORD": {
+      "description": "Password used for the Java truststore",
+      "generator": "secret"
+    },
+    "KEYSTORE_PASSWORD": {
+      "description": "Password used for the Java keystore",
+      "generator": "secret"
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "Performance-M"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "https://github.com/amiel/heroku-buildpack-apt#feature/support-adding-keys"
+    },
+    {
+      "url": "heroku/jvm"
+    }
+  ]
+}

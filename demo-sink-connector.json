@@ -1,0 +1,10 @@
+{
+    "name": "redshift-sink",
+    "config": {
+      "connector.class": "io.confluent.connect.jdbc.JdbcSinkConnector",
+      "tasks.max": "1",
+      "topics": "connect_demo",
+      "connection.url": "jdbc:redshift://heroku-kafka-connect-cluster.c4dhylabrrft.us-east-1.redshift.amazonaws.com:5439/heroku?user=awsuser&password=Heroku12345",
+      "auto.create": "false"
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "name": "postgres-source",
+    "config": {
+      "connector.class": "io.confluent.connect.jdbc.JdbcSourceConnector",
+      "tasks.max": "1",      
+      "connection.url": "jdbc:postgresql://<Postgres-Host>:5432/<Database-Name>?user=<Database-UserName>&password=<DatabasePassword>",
+      "mode": "incrementing",
+      "incrementing.column.name": "id",
+      "topic.prefix": "connect_"      
+    }
+}
