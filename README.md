@@ -49,7 +49,7 @@ CREATE TABLE connect_demo
 
 ## Usage
 
-**Kafka Connect Connectors**
+**Create Kafka Connect Connectors**
 
 Source Connector 
 
@@ -85,6 +85,32 @@ curl -X POST https://<HEROKU_APP_URL>/connectors -H "Content-Type: application/j
 }
 EOF
 ```
+
+**Delete Kafka Connect Connectors**
+
+```
+curl -X DELETE https://<HEROKU_APP_URL>/connectors/<CONNECTOR_NAME> 
+```
+
+**Insert some data into Heroku Postgres**
+
+```
+INSERT INTO demo (name, age) VALUES ('John', 26);
+INSERT INTO demo (name, age) VALUES ('Jane', 24);
+INSERT INTO demo (name, age) VALUES ('Julia', 25);
+INSERT INTO demo (name, age) VALUES ('Jamie', 22);
+INSERT INTO demo (name, age) VALUES ('Jenny', 27);
+```
+
+This will sync the inserted data from Heroku Postgres to Amazon Redshift Table (here in `connect_demo` table).
+
+**JDBC Connector Info**
+- https://www.confluent.io/blog/kafka-connect-deep-dive-jdbc-source-connector
+- https://docs.confluent.io/current/connect/kafka-connect-jdbc/source-connector/index.html
+- https://docs.confluent.io/current/connect/kafka-connect-jdbc/sink-connector/index.html
+- https://docs.confluent.io/current/connect/managing/connectors.html#connect-bundled-connectors
+- https://docs.confluent.io/current/connect/kafka-connect-jdbc/source-connector/source_config_options.html
+- https://docs.confluent.io/current/connect/kafka-connect-jdbc/sink-connector/sink_config_options.html
 
 
 
