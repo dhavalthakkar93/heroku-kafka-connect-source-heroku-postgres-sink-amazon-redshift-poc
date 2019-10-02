@@ -102,7 +102,7 @@ INSERT INTO demo (name, age) VALUES ('Jamie', 22);
 INSERT INTO demo (name, age) VALUES ('Jenny', 27);
 ```
 
-This will sync the inserted data from Heroku Postgres to Amazon Redshift Table (here in `connect_demo` table).
+This will sync the inserted data from Heroku Postgres to Heroku Kafka Topic `connect_connect_demo` and sync from Heroku Kafka to Amazon Redshift Table (here in `connect_demo` table) using Kafka Connect.
 
 **JDBC Connector Info**
 - https://www.confluent.io/blog/kafka-connect-deep-dive-jdbc-source-connector
