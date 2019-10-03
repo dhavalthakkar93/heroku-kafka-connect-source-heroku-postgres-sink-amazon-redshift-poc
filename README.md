@@ -2,6 +2,10 @@
 
 This proof of concept is intended to demonstrate the use of Kafka Connect to sync the data from Heroku Postgres to Heroku Kafka and from Heroku Kafka to Amazon Redshift using [Confluent Kafka Connect](https://docs.confluent.io/current/connect/index.html).
 
+## Deploy to Heroku
+
+[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
 ## Prerequisite
 
 **Heroku**
