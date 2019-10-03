@@ -6,6 +6,8 @@ This proof of concept is intended to demonstrate the use of Kafka Connect to syn
 
 [![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
+If you are using `Deploy to Heroku` button you can skip the Heroku prerequisite steps.
+
 ## Prerequisite
 
 **Heroku**
