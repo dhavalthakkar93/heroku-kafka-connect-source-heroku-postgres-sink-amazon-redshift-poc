@@ -18,6 +18,7 @@ This proof of concept is intended to demonstrate the use of Kafka Connect to syn
 - Heroku Config Var `TRUSTSTORE_PASSWORD` (`heroku config:set TRUSTSTORE_PASSWORD="<PASSWORD>" -a <APP_NAME>`)
 
 **Amazon Redshift Cluster**
+
 Setup a Amazon Redshift Cluster by following the steps [here](https://docs.aws.amazon.com/redshift/latest/gsg/rs-gsg-launch-sample-cluster.html)
 
 **Kafka Topics**
