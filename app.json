@@ -26,7 +26,7 @@
   },
   "addons" : [
     {
-      "plan": "heroku-postgres:standard-0"
+      "plan": "heroku-postgresql:standard-0"
     },
     {
       "plan": "heroku-kafka:standard-0"
