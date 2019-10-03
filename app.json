@@ -1,6 +1,6 @@
 {
   "name": "Heroku Kafka Connect",
-  "description": "Heroku Kafka Connect to Sync Data from Heroku Postgres to Heroku Kafka and from Heroku Kafka to Amazon Redshift",
+  "description": "Kafka Connect on Heroku to Sync Data from Heroku Postgres to Heroku Kafka and from Heroku Kafka to Amazon Redshift",
   "keywords": [
     "Kafka",
     "Postgres",
@@ -24,6 +24,14 @@
       "size": "Performance-M"
     }
   },
+  "addons" : [
+    {
+      "plan": "heroku-postgres:standard-0"
+    },
+    {
+      "plan": "heroku-kafka:standard-0"
+    }
+  ],
   "buildpacks": [
     {
       "url": "https://github.com/amiel/heroku-buildpack-apt#feature/support-adding-keys"
