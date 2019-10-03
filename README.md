@@ -8,7 +8,7 @@ This proof of concept is intended to demonstrate the use of Kafka Connect to syn
 
 If you are using `Deploy to Heroku` button you can skip the Heroku prerequisite steps.
 
-**Note**: `web` process will crash until you create a required Kafka Topics (connect-status, connect-offsets, connect-configs).
+**Note**: `web` process will crash until you create a required Kafka Topics (**connect-status, connect-offsets, connect-configs**).
 
 ## Prerequisite
 
