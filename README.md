@@ -29,7 +29,7 @@ Setup a Amazon Redshift Cluster by following the steps [here](https://docs.aws.a
 - connect-status (`heroku kafka:topics:create connect-status --partitions 3`)
 - connect-offsets (`heroku kafka:topics:create connect-offsets --partitions 3`)
 - connect-configs (`heroku kafka:topics:create connect-configs --partitions 3`)
-- connect_connect_demo (`heroku kafka:topics:create connect_connect_demo --partitions 3`)
+- connect_demo (`heroku kafka:topics:create connect_connect_demo --partitions 3`)
 
 **Heroku Postgres Table**
 
@@ -111,7 +111,7 @@ INSERT INTO demo (name, age) VALUES ('Jamie', 22);
 INSERT INTO demo (name, age) VALUES ('Jenny', 27);
 ```
 
-This will sync the inserted data from Heroku Postgres to Heroku Kafka Topic `connect_connect_demo` and sync from Heroku Kafka to Amazon Redshift Table (here in `connect_demo` table) using Kafka Connect.
+This will sync the inserted data from Heroku Postgres to Heroku Kafka Topic `connect_demo` and sync from Heroku Kafka to Amazon Redshift Table (here in `connect_demo` table) using Kafka Connect.
 
 **JDBC Connector Info**
 - https://www.confluent.io/blog/kafka-connect-deep-dive-jdbc-source-connector
