@@ -29,7 +29,7 @@ Setup a Amazon Redshift Cluster by following the steps [here](https://docs.aws.a
 - connect-status (`heroku kafka:topics:create connect-status --partitions 3`)
 - connect-offsets (`heroku kafka:topics:create connect-offsets --partitions 3`)
 - connect-configs (`heroku kafka:topics:create connect-configs --partitions 3`)
-- connect_demo (`heroku kafka:topics:create connect_connect_demo --partitions 3`)
+- connect_demo (`heroku kafka:topics:create connect_demo --partitions 3`)
 
 **Heroku Postgres Table**
 
