@@ -29,7 +29,7 @@
       "plan": "heroku-postgresql:standard-0"
     },
     {
-      "plan": "heroku-kafka:standard-0"
+      "plan": "heroku-kafka:basic-0"
     }
   ],
   "buildpacks": [
